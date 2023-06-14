@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *</p>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Contact Informaion</legend>
+            <label for="Mx.">Mx.</label>
+            <br>
+            <input type="radio" name="suffixPrefence" id="Mx" checked> <br>
+            <label for="Mr.">Mr.</label>
+            <br>
+            <input type="radio" name="suffixPrefence" id="Mr"> <br>
+            <label for="Ms.">Ms.</label>
+            <br>
+            <input type="radio" name="suffixPrefence" id="Ms"> <br>
+            <label for="Mrs.">Mrs.</label>
+            <br>
+            <input type="radio" name="suffixPrefence" id="Mrs"> <br>
+            <label for="name">Name</label>
+            <br>
+        <input type="text" name="name" id="name" placeholder="enter name" required>
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="text" name="name" id="name" placeholder="enter email" required>
+        </fieldset>
+        <fieldset>
+            <legend>Payment Informaion</legend>
+            <select>
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="American-Express">American-Express</option>
+            <option value="Discover">Discover</option>
+            </select>
+            <br>
+            <label for="Credit Card Number">Credit Card Number</label>
+            <br>
+            <input type="tel" name="Credit Card Number" id="CCN" placeholder="xxxx xxxx xxxx xxxx" maxlength = "16" required> 
+            <label for="CCV">CCV</label>
+            <input type="tel" name="CCV" id="CCV" placeholder="xxxx" maxlength = "4" required>
+            <br>
+            <label for="Expiration Date">Expiration Date</label>
+            <br>
+            <input type="tel" name="Expiration Date" id="Expiration Date" placeholder="" required>
+        </fieldset>
+        <button type="button">Submit Payment</button>
+        <br>
+        <br>
+        <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Please leave us some feedback"></textarea>
+    </form>
+</body>
+</html>
