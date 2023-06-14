@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head></head>
+    <head>
+        <title>Payment Form</title>
+    </head>
     <body>
         <h1>Payment Form</h1>
         <p>Required fields are marked by *</p>
@@ -8,13 +10,13 @@
             <fieldset>
                 <legend>Contact Preferences</legend>
                 <label for="mx">Mx.</label><br>
-                <input type="radio" name="mx" value="mx"checked/><br>
+                <input type="radio" name="mx" id="mx" value="mx"checked/><br>
                 <label for="mr">Mr.</label><br>
-                <input type="radio" name="mx" value="mr"/><br>
+                <input type="radio" name="mx" id="mr" value="mr"/><br>
                 <label for="ms">Ms.</label><br>
-                <input type="radio" name="mx" value="ms"/><br>
+                <input type="radio" name="mx" id="ms" value="ms"/><br>
                 <label for="mrs">Mrs.</label><br>
-                <input type="radio" name="mx" value="mrs"/><br>
+                <input type="radio" name="mx" id="mrs" value="mrs"/><br>
                 <label for="name">Name</label><br>
                 <input type="text" id="name" name="name" required/><br>
                 <label for="email">Email</label><br>
@@ -31,7 +33,7 @@
                 <label for="card_number"> Credit Card Number</label><br>
                 <input type="tel" name="card_number" placeholder="xxxx xxxx xxxx xxxx" required/><br>
                 <label for="expiration_date">Expiration Date</label><br>
-                <input type="date" name="expiration_date" required/>
+                <input type="date" id="expiration_date" name="expiration_date" required/>
             </fieldset>
             <input type="submit" value="Submit Payment"/>
         </form>
