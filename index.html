@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab-intro-to-forms</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <p>Required fields are marked by *
+    </p>
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label for="marriageStatus"> Mx.</label>
+        <br>
+        <input type="radio" name="preferance" id="mx" checked>
+        <br>
+        <label for="marriageStatus"> Mr.</label>
+        <br>
+        <input type="radio" name="preferance" id="mr" >
+        <br>
+        <label for="marriageStatus"> Ms.</label>
+        <br>
+        <input type="radio" name="preferance" id="ms" >
+        <br>
+        <label for="marriageStatus"> Mrs.</label>
+        <br>
+        <input type="radio" name="preferance" id="mrs" >
+        <br>
+        <label for="name"> Name</label>
+        <br>
+        <input type="text" name="preferance" id="fullName" >
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="text" name="preferance" id="entireEmail" >
+    </fieldset>
+    <fieldset>
+        <legend>Payment Information</legend>
+        <form action="#" method="post">
+            <select id="credit-card-number" name="credit-card-number">
+                <option value="visa"> Visa</option>
+                <option value="mastercard"> Mastercard</option>
+                <option value="american-express"> American Express</option>
+                <option value="discover"> Discover</option>
+            </select> 
+            <label for="credit-card-number"> Credit Card Number</label>
+            <label for="name"></label>
+            <br>
+            <input type="tel" name="credit-card-number" id="name" placeholder="xxxx xxxx xxxx xxxx" required>
+            <br>
+            <label for="expiration-date"> Expiration Date
+            <br>
+            <input type="text" id="expiration-date" required>
+            </label>
+        </fieldset>
+        <input name="form" type="submit" value="Submit Payment"/>
+        </form>
+</body>
+</html>
