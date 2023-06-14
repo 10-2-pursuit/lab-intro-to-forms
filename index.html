@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+</head>
+<body>
+    <h1> Payment Form</h1>
+    <p> Required fields are marked by *</p>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Contact Information</legend>
+            <input type="radio" name="contactInformation" checked >
+            <label for="Mx"> Mx </label>
+            <input type="radio" name="contactInformation" >
+            <label for="Mr"> Mr </label>
+            <input type="radio" name="contactInformation" >
+            <label for="Ms"> Ms  </label>
+            <input type="radio" name="contactInformation" >
+            <label for="Mrs"> Mrs  </label>
+            <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter name" required>
+            <label for="name">Email</label>
+            <input type="text" name="Email" id="Email" placeholder="Enter email" required>
+        </div>
+        </fieldset>
+        <fieldset>
+            <legend>Payment Information</legend>
+            <select>
+                
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">MasterCard</option>
+                <option value="American Express">Amex</option>
+                <option value="Discover">Discover</option>
+                
+            </select>
+            <label text="Payment Information">Credit Card Type</label>
+            <div>
+            <input type="tel" placeholder="xxxx xxxx xxxx xxxx" required>
+            <label for="Credit Card Number">Credit Card Number</label>
+        </div>
+        <div>
+            <input type="text" placeholder="MM/YY" required>
+            <label for="Credit card expiration date ">Credit Card Expiration Date</label>
+        </div>
+        <div>
+            <input type="text" placeholder="cvv" required>
+            <label for="last 3 digit ">last 3 digits</label> 
+        </div>
+        </fieldset>
+        <input type="Submit" value="Submit Payment">
+    </form>
+</body>
+</html>
