@@ -16,9 +16,9 @@
                 <label for="mrs">Mrs.</label><br>
                 <input type="radio" name="mx" value="mrs"/><br>
                 <label for="name">Name</label><br>
-                <input type="text" name="name"/><br>
+                <input type="text" id="name" name="name" required/><br>
                 <label for="email">Email</label><br>
-                <input type="text" name="email"/>
+                <input type="email" id="email" name="email" required/>
             </fieldset>
             <fieldset>
                 <legend>Payment Information</legend>
@@ -28,10 +28,10 @@
                     <option value="american-express">American Express</option>
                     <option value="discover">Discover</option>
                 </select>
-                <label for="cards"> Credit Card Number</label><br>
-                <input type="text" name="card_number"/><br>
+                <label for="card_number"> Credit Card Number</label><br>
+                <input type="tel" name="card_number" placeholder="xxxx xxxx xxxx xxxx" required/><br>
                 <label for="expiration_date">Expiration Date</label><br>
-                <input type="text" name="expiration_date"/>
+                <input type="date" name="expiration_date" required/>
             </fieldset>
             <input type="submit" value="Submit Payment"/>
         </form>
