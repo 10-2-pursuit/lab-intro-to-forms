@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.2 Forms</title>
+</head>
+<body>
+  <h1> Payment Forms </h1> 
+  <p></p>Required Fields Marked by *</p>
+  
+  <form action="#" method="post">
+       
+        <fieldset>
+            <legend>Contact Preferences:</legend>
+            <label for="emailPreference"> Mx. </label>
+            <input type="radio" name="contactPreference" id="emailPreference" checked>
+            <label for="emailPreference"> Mr. </label>
+            <input type="radio" name="contactPreference" id="emailPreference" >
+            <label for="phonePreference"> Ms. </label>
+            <input type="radio" name="contactPreference" id="phonePreference" >
+            <label for="noPreference"> Mrs. </label>
+            <input type="radio" name="contactPreference" id="noPreference" >
+            <label for="name"> Full Name* </label>
+            <input type="text" name="name" id="name" placeholder="First & Last" required>
+            <label for="email"> Email* </label>
+            <input type="email" name="email" id="email" placeholder="xxxxx@.com" required>
+        </fieldset>
+          
+          <fieldset>
+            <legend>Payment Options:</legend>
+            <label for="Card Type"> Card Type </label>  
+            <select id="Card Type" name="Card Type">
+                <option value="V">VISA</option>
+                <option value="M">MASTERCARD</option>
+                <option value="AM">AMERICAN EXPRESS</option>
+                <option value="D">DISCOVER</option>
+              </select>
+            <label for="name">Card Number*</label>
+            <input type="tel" id="Card Number" name="Card Number"
+       pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+            <label for="name">CSS*</label>
+            <input type="number" name="CSS" id = "CSS" placeholder="xxx" required>
+          <label for="name">Expiration Date*</label>
+            <input type="text" name="name" id="name" placeholder="Month & Day" required>
+          </fieldset>
+    
+    <input type="Submit" value="Submit Payment"/>
+    </form>
+    </body>
+    </html>
